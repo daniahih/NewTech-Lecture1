@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+      h1 {
+        color: red;
+        background-color: yellow;
+        font-size: 12px;
+        font-weight: 300;
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      p {
+        color: green;
+      }
+      #first-pargraph {
+        color: red;
+      }
+      .generalPargraph {
+        border: 1px solid black;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        cursor: pointer;
+        opacity: 0.4;
+        padding: 20px 20px;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .links {
+        text-decoration: none;
+      }
+      .parent {
+        width: 200px;
+        background-color: yellow;
+        overflow: hidden;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        margin-bottom: 10px;
+      }
+
+      .next {
+        width: 100px;
+        height: 30px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Testing Css</h1>
+        <p id="first-pargraph" style="color: blue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+          deleniti sunt excepturi commodi. Quos, magnam? Id sit adipisci itaque
+          animi ea iste temporibus numquam aspernatur voluptas, laudantium odit
+          eveniet voluptatem.
+        </p>
+        <p class="generalPargraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+          deleniti sunt excepturi commodi. Quos, magnam? Id sit adipisci itaque
+          animi ea iste temporibus numquam aspernatur voluptas, laudantium odit
+          eveniet voluptatem.
+        </p>
+        <p class="generalPargraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+          deleniti sunt excepturi commodi. Quos, magnam? Id sit adipisci itaque
+          animi ea iste temporibus numquam aspernatur voluptas, laudantium odit
+          eveniet voluptatem.
+        </p>
+        <section class="box">hello from dania</section>
+        <a class="links" href="https://google.com">google</a>
+      </section>
+      <div class="parent">
+        <div class="child"></div>
+        <div class="next"></div>
+      </div>
+    </main>
+  </body>
+</html>

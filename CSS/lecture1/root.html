@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root Example</title>
+    <style>
+      /* :root = the main root of the document */
+      :root {
+        --main-color: #4f46e5;
+        --secondary-color: #e0e7ff;
+        --text-color: #222;
+        --padding-size: 12px;
+        --radius: 10px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 20px;
+      }
+
+      .card {
+        background-color: white;
+        border: 2px solid var(--main-color);
+        padding: var(--padding-size);
+        border-radius: var(--radius);
+        width: 300px;
+      }
+
+      .btn {
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        padding: var(--padding-size);
+        border-radius: var(--radius);
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>This box uses values from :root.</p>
+      <button class="btn">Click me</button>
+    </div>
+  </body>
+</html>
