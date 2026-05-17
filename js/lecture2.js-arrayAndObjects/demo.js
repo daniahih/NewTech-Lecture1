@@ -111,16 +111,13 @@ let objKaram = {
 objKaram.phone = "0524377";
 // console.log(objKaram);
 
-objKaram = null;
-
-const product = {
-  id: 101,
-  name: "Laptop",
-  price: 1200,
-  inStock: true,
-};
-
-for (let key in product) {
-  console.log("Key:", key);
-  console.log("Value:", product[key]);
+const numbers = [12, 32, 46, 34];
+let sum;
+for (let i = 0; i < numbers.length; i++) {
+  sum = 0;
+  console.log((sum += numbers[i]));
 }
+
+console.log(sum);
+
+console.log(NaN === NaN);
