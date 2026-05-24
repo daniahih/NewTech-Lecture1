@@ -21,7 +21,7 @@ console.log("Hello Omar, welcome to JavaScript class!");
 
 // function nameFuncation() {}
 
-// function sayHello(name) {
+//  functionsayHello(name) {
 //   console.log(`hello ${name} , welcome to js`);
 // }
 
@@ -35,7 +35,7 @@ console.log("Hello Omar, welcome to JavaScript class!");
 //   );
 // }
 
-// intreduceStudent(33, "tamir");
+// intreduceStudent("TAMIR", 37);
 
 // function createUser(username, role = "student") {
 //   console.log(`${username} with ${role}`);
@@ -75,24 +75,28 @@ console.log("Hello Omar, welcome to JavaScript class!");
 // const multiply = function (a, b) {
 //   a * b;
 // };
-// ARROW FUNCTIONS
+// // ARROW FUNCTIONS
 // const sum = (a, b) =>
 
 // FUNCTION DECLARATION HOISTING
 
 // // Function declarations are hoisted.
-// sayWelcome();
-// function sayWelcome() {
-//   console.log("Hello world ");
-// }
+sayWelcome();
+function sayWelcome() {
+  console.log("Hello world ");
+}
 
-// // FUNCTION EXPRESSION HOISTING
-// console.log(divide(10, 2));
+// FUNCTION EXPRESSION HOISTING
+console.log(divide(10, 2));
 
-// const divide = function (a, b) {
-//   return a / b;
-// };
+const divide = function (a, b) {
+  return a / b;
+};
+console.log(sum(1, 2));
 
+const sum = (a, b) => {
+  console.log(a + b);
+};
 // const name = "makram";
 
 // function sayHello() {
@@ -138,25 +142,25 @@ console.log("Hello Omar, welcome to JavaScript class!");
 
 // printStudentSummary(student1);
 
-// function createStudent(name, grade) {
-//   return {
-//     name: name,
-//     grade: grade,
-//     isActive: true,
-//   };
-// }
+function createStudent(name, grade, isActive = true) {
+  return {
+    name: name,
+    grade: grade,
+    isActive,
+  };
+}
 
-// const newStudent = createStudent("Lina", 88);
-// const newStudent2 = createStudent("moath", 88);
-// const newStudent3 = createStudent("dania", 88);
-// const newStudent4 = createStudent("Lina", 88);
-// const newStudent5 = createStudent("Lina", 88);
+const newStudent = createStudent("Lina", 88, true);
+const newStudent2 = createStudent("moath", 88, false);
+const newStudent3 = createStudent("dania", 88);
+const newStudent4 = createStudent("Lina", 88);
+const newStudent5 = createStudent("Lina", 88);
 
-// console.log(newStudent);
-// console.log(newStudent2);
-// console.log(newStudent3);
-// console.log(newStudent4);
-// console.log(newStudent5);
+console.log(newStudent);
+console.log(newStudent2);
+console.log(newStudent3);
+console.log(newStudent4);
+console.log(newStudent5);
 
 // const grades = [90, 80, 70, 100];
 
@@ -227,16 +231,3 @@ console.log("Average dynamic 5:", calculateAverageDynamic([100])); // Single ele
 
 // console.log(runOperation(5, 3, add));
 // console.log(runOperation(5, 3, multiplyNumbers));
-
-
-
-
-
-
-
-
-
-
-
-
-
