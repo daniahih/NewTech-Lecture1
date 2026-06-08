@@ -28,6 +28,7 @@ class Circle extends Shape {
 }
 
 const rectangle = new Rectangle(10, 5);
+
 const circle = new Circle(4);
 
 rectangle.calculateArea();
