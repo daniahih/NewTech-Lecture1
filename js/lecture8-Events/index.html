@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DOM Events Lecture</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        line-height: 1.6;
+      }
+
+      section {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+      }
+
+      button,
+      input,
+      select {
+        padding: 10px;
+        margin: 5px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .box {
+        width: 250px;
+        min-height: 100px;
+        background-color: lightblue;
+        padding: 20px;
+        margin-top: 10px;
+      }
+
+      .active {
+        background-color: lightgreen;
+        border: 3px solid green;
+      }
+
+      .outer {
+        background-color: lightcoral;
+        padding: 30px;
+      }
+
+      .inner {
+        background-color: lightyellow;
+        padding: 30px;
+      }
+
+      .student-item {
+        cursor: pointer;
+        padding: 8px;
+      }
+
+      .selected {
+        font-weight: bold;
+        background-color: lightblue;
+      }
+
+      .error {
+        color: red;
+      }
+
+      .success {
+        color: green;
+      }
+      .test {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="main-title">JavaScript DOM Events</h1>
+
+    <!-- 1. First Event -->
+    <section id="firstSection">
+      <h2>1. First Event</h2>
+
+      <button id="main-button">Click Me</button>
+
+      <p id="main-message">Waiting for an event...</p>
+    </section>
+
+    <!-- 2. Event Object -->
+    <section>
+      <h2>2. The Event Object</h2>
+
+      <button id="event-button">Show Event Information</button>
+
+      <p id="event-information"></p>
+    </section>
+
+    <!-- 3. Target and Current Target -->
+    <section>
+      <h2>3. target and currentTarget</h2>
+
+      <button id="target-button">
+        <span>Click the text inside me</span>
+      </button>
+
+      <p id="target-output"></p>
+    </section>
+
+    <!-- 4. Mouse Events -->
+    <section>
+      <h2>4. Mouse Events</h2>
+
+      <div id="mouse-box" class="box">Move the mouse inside this box</div>
+    </section>
+
+    <!-- 5. Keyboard Events -->
+    <section>
+      <h2>5. Keyboard Events</h2>
+
+      <input
+        id="keyboard-input"
+        type="text"
+        placeholder="Press keyboard keys"
+      />
+
+      <p id="keyboard-output"></p>
+    </section>
+
+    <!-- 6. Input Event -->
+    <section>
+      <h2>6. Input Event</h2>
+
+      <input id="live-input" type="text" placeholder="Type something" />
+
+      <p>
+        Live value:
+        <span id="live-output">Start typing...</span>
+      </p>
+    </section>
+
+    <!-- 7. Change Event -->
+    <section>
+      <h2>7. Change Event</h2>
+
+      <select id="course-select">
+        <option value="">Choose a course</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="React">React</option>
+        <option value="Node.js">Node.js</option>
+      </select>
+
+      <p id="course-output"></p>
+    </section>
+
+    <!-- 8. Form Event -->
+    <section>
+      <h2>8. Form Submit and preventDefault</h2>
+
+      <form id="registration-form">
+        <input id="name-input" type="text" placeholder="Enter your name" />
+
+        <input id="email-input" type="email" placeholder="Enter your email" />
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="form-output"></p>
+    </section>
+
+    <!-- 9. Class Toggle -->
+    <section>
+      <h2>9. Events and Classes</h2>
+
+      <button id="toggle-button">Toggle Box</button>
+
+      <div id="toggle-box" class="box">My appearance changes</div>
+    </section>
+
+    <!-- 10. Bubbling -->
+    <section>
+      <h2>10. Event Bubbling</h2>
+
+      <div id="outer-box" class="outer">
+        Outer
+
+        <div id="inner-box" class="inner">
+          Inner
+
+          <button id="bubble-button">Click Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Event Delegation -->
+    <section>
+      <h2>11. Event Delegation</h2>
+
+      <button id="add-student-button">Add Student</button>
+
+      <ul id="student-list">
+        <li class="student-item">Ahmad</li>
+        <li class="student-item">Sara</li>
+        <li class="student-item">Lina</li>
+      </ul>
+
+      <p id="student-output"></p>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
