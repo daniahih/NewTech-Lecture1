@@ -26,33 +26,27 @@
 //     console.log(error);
 //   });
 
-// fetch("https://jsonplaceholder.typicode.com/wrong-url")
-//   .then(function (response) {
-//     console.log(response);
+fetch("https://jsonplaceholder.typicode.com/wrong-url")
+  .then(function (response) {
+    console.log(response);
 
-//     console.log("Response status:", response.status);
-//     console.log("Response ok:", response.ok);
+    console.log("Response status:", response.status);
+    console.log("Response ok:", response.ok);
 
-//     if (response.ok === false) {
-//       throw new Error("Request failed with status: " + response.status);
-//     }
+    if (response.ok === false) {
+      throw new Error("Request failed with status: " + response.status);
+    }
 
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log("Data:");
-//     console.log(data);
-//   })
-//   .catch(function (error) {
-//     console.log("Error:");
-//     console.log(error.message);
-//   });
-
-// class Teacher{
-//     constructor(name,age)
-
-// }
-// const dania = new Teacher("dania")
+    return response.json();
+  })
+  .then(function (data) {
+    console.log("Data:");
+    console.log(data);
+  })
+  .catch(function (error) {
+    console.log("Error:");
+    console.log(error.message);
+  });
 
 // async await
 
